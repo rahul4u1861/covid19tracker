@@ -23,8 +23,8 @@ export class App extends Component {
     render() {
         const { data, country } = this.state;
         return(
-            <div classnames={styles.container}>
-                <img classnames={styles.image} src={coronaImage} alt="Covid-19"/>
+            <div className={styles.container}>
+                <img className={styles.image} src={coronaImage} alt="Covid-19"/>
                 <Cards data={data}/>
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
                 <Charts data={data} country={country}/>

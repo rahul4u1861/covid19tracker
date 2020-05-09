@@ -27,22 +27,6 @@ export const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate }}) => 
                     </CardContent>
                 </Grid>
 
-                <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infected)}>
-                    <CardContent>
-                        <Typography color="textSecondary" gutterBottom>Active</Typography>
-                        <Typography variant="h5">
-                            <CountUp
-                                start={0}
-                                end={confirmed.value}
-                                duration={1.5}
-                                separator=","
-                            />
-                        </Typography>
-                        <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Total Cases</Typography>
-                    </CardContent>
-                </Grid>
-
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>Recovered</Typography>
