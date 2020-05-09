@@ -2,6 +2,7 @@
   "name": "covid-19-tracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rahul4u1861.github.io/covid19tracker/",
   "dependencies": {
     "@material-ui/core": "^4.9.12",
     "@testing-library/jest-dom": "^4.2.4",
